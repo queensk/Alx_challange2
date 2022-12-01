@@ -8,10 +8,10 @@ print(striped_binary)
 def binaryToDecimal(n):
     return int(n,2)
 
-list_num = []
+list_num = [ binaryToDecimal(i) for i in striped_binary ]
 
-for i in striped_binary:
-    list_num.append( binaryToDecimal(i))
+# for i in striped_binary:
+#     list_num.append()
 
 # string_binary = ' '.join(str(e) for e in list_num)
 string_binary = ' '.join(map(str,list_num))
